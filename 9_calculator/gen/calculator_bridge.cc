@@ -16,9 +16,9 @@
 
 #include "calculator_bridge.h"
 
-#include "legacy_core/js_type_traits.h"
-#include "legacy_core/native_type_traits.h"
-#include "legacy_core/enum_validator.h"
+#include <js_type_traits.h>
+#include <native_type_traits.h>
+#include <enum_validator.h>
 
 void CalculatorBridge::Init(Napi::Env env, Napi::Object exports) {
   Napi::Function js_constructor =
