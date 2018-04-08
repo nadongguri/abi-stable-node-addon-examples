@@ -5,7 +5,8 @@
       "cflags!": [ "-fno-exceptions" ],
       "cflags_cc!": [ "-fno-exceptions" ],
       "sources": [ "calculator.cc",
-                   "bacardi.cc" ],
+        "<!@(node -p \"require('node-addon-api').bacardi()\")"
+      ],
       "dependencies": [
         "<!@(node -p \"require('node-addon-api').gyp\")"
       ],
